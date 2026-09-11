@@ -6,7 +6,7 @@ ARCH=$(uname -m)
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
-pacman -Syu --noconfirm pipewire-audio pipewire-jack qt5-base
+pacman -Syu --noconfirm pipewire-audio pipewire-jack
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
@@ -28,3 +28,7 @@ fi
 
 mkdir -p ./AppDir/bin
 tar -xvf /tmp/app.tar.xz --strip-components=1 -C ./AppDir/bin
+
+# we need to remove this because chrome otherwise dlopen libQt5Core on the host
+# when present, we can only bunle libqt6 or libqt5 but not both
+rm -f ./AppDir/bin/libqt5_shim.so

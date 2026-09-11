@@ -7,7 +7,7 @@
 [![Latest Stable Release](https://img.shields.io/github/v/release/pkgforge-dev/Ungoogled-Chromium-AppImage)](https://github.com/pkgforge-dev/Ungoogled-Chromium-AppImage/releases/latest)
 
 <p align="center">
-  <img src="https://github.com/pkgforge-dev.png" width="128" />
+  <img src="https://www.techspot.com/images2/downloads/topdownload/2021/09/2021-09-07-ts3_thumbs-b1f-p_256.webp" width="128" />
 </p>
 
 

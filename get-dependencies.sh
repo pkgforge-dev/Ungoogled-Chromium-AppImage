@@ -6,11 +6,15 @@ ARCH=$(uname -m)
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
-pacman -Syu --noconfirm pipewire-audio pipewire-jack
+pacman -Syu --noconfirm pipewire-audio pipewire-jack vulkan-mesa-layers
+
+if [ "$ARCH" = 'x86_64' ]; then
+		pacman -Syu --noconfirm libva-intel-driver
+fi
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
-get-debloated-pkgs --add-common --prefer-nano
+get-debloated-pkgs --add-common --prefer-nano intel-media-driver-mini ffmpeg-mini
 
 echo "Getting app..."
 echo "---------------------------------------------------------------"

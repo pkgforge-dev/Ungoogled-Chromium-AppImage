@@ -14,7 +14,7 @@ export DEPLOY_P11KIT=1
 export URUNTIME_PRELOAD=1
 
 # Deploy dependencies
-quick-sharun ./AppDir/bin/*
+quick-sharun ./AppDir/bin/* /usr/lib/libgtk-3.so*
 
 # Turn AppDir into AppImage
 quick-sharun --make-appimage

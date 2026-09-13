@@ -11,9 +11,6 @@ export DEPLOY_OPENGL=1
 export DEPLOY_VULKAN=1
 export DEPLOY_PIPEWIRE=1
 export URUNTIME_PRELOAD=1
-export CROSS_LIBC_DLOPEN=1
-export STRACE_BINARY=chrome
-export STRACE_FLAGS='--no-sandbox'
 
 # Deploy dependencies
 quick-sharun ./AppDir/bin/*
